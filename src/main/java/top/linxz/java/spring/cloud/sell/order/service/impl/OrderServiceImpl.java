@@ -2,6 +2,7 @@ package top.linxz.java.spring.cloud.sell.order.service.impl;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import top.linxz.java.spring.cloud.sell.order.dataobject.OrderMaster;
 import top.linxz.java.spring.cloud.sell.order.dto.OrderDTO;
 import top.linxz.java.spring.cloud.sell.order.enums.OrderStatusEnum;
@@ -13,6 +14,7 @@ import top.linxz.java.spring.cloud.sell.order.utils.KeyUtil;
 
 import java.math.BigDecimal;
 
+@Service
 public class OrderServiceImpl implements OrderService {
     @Autowired
     private OrderDetailRepository orderDetailRepository;
